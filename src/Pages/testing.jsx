@@ -4,18 +4,12 @@ import "aos/dist/aos.css";
 
 const TestAOS = () => {
   useEffect(() => {
-    // Inisialisasi AOS
     AOS.init();
 
-    // Function untuk mengecek will-change property
     const checkWillChange = () => {
-      // Mengambil semua elemen dengan data-aos
       const aosElements = document.querySelectorAll("[data-aos]");
 
-      console.log(`Ditemukan ${aosElements.length} elemen dengan data-aos`);
-
       aosElements.forEach((element, index) => {
-        // Tambahkan border pada elemen
         element.style.border = "2px dashed red";
 
         const computedStyle = window.getComputedStyle(element);
