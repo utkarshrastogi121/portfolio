@@ -9,7 +9,7 @@ import Portfolio from "./Pages/Portfolio";
 import ContactPage from "./Pages/Contact";
 import WelcomeScreen from "./Pages/WelcomeScreen";
 import { AnimatePresence } from 'framer-motion';
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 // eslint-disable-next-line react/prop-types
 const LandingPage = ({ showWelcome, setShowWelcome }) => {
