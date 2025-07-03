@@ -1,66 +1,49 @@
-# Portfolio 
-Hello everyone!  
-Let me introduce myself, Utkarsh Rastogi. On this occasion, I’d like to share the portfolio website project that I’ve developed.  
----
+# 🚀 Portfolio Website – Utkarsh Rastogi
 
-Here’s a simple guide to run this project.  
-
-## Prerequisites  
-
-Ensure that you have already installed:  
-- **Node.js**  
+Hello everyone! 👋  
+I'm **Utkarsh Rastogi**, a 3rd-year Computer Science student from IIIT Ranchi.  
+I'm excited to share my **personal portfolio website** that showcases my skills, projects, and experiences.
 
 ---
 
-## Steps to Run the Project  
+## 🧰 Prerequisites
 
-1. **Download this project:**  
+Before running the project, make sure you have the following installed:
 
-   ```bash  
-   git clone https://github.com/utkarshrastogi121/portfolio.git  
-   ```  
-
-2. **Install all dependencies:**  
-
-   ```bash  
-   npm install  
-   ```  
-   Or use:  
-
-   ```bash  
-   npm install --legacy-peer-deps  
-   ```  
-
-3. **Run the project:**  
-
-   ```bash  
-   npm run dev  
-   ```  
-
-4. **Open in browser:**  
-
-   Access the application through the link displayed in your terminal.  
+- [Node.js](https://nodejs.org/) (LTS version recommended)
 
 ---
 
-## Creating a Production Build  
+## 📦 Getting Started
 
-To create a production-ready build:  
+Follow these steps to run the project locally:
 
-1. Run the build command:  
+### 1. Clone the Repository
 
-   ```bash  
-   npm run build  
-   ```  
+```bash
+git clone https://github.com/utkarshrastogi121/portfolio.git
+cd portfolio
+```
+### 2. Install Dependencies
 
-2. The build files will be saved in the `dist` folder. You can upload this folder to your hosting server.  
+```bash
+npm install
+```
+### 3. Run the Development Server
+
+```bash
+npm run dev
+```
 
 ---
 
-## Notes  
+## 📬 Contact
+I'm always open to collaborating on exciting projects or just having a conversation about tech, development, or career growth!
 
-If you encounter issues while running the project, ensure that:  
-- Node.js is correctly installed.  
-- You’re in the correct project directory.  
-- All dependencies are installed without errors.  
----
+You can reach out to me via:
+
+✉️ Email: utkarsh.2023ug1077@iiitranchi.ac.in
+
+💼 LinkedIn: linkedin.com/in/utkarshrastogi121
+
+🧑‍💻 GitHub: github.com/utkarshrastogi121
