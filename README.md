@@ -42,8 +42,7 @@ I'm always open to collaborating on exciting projects or just having a conversat
 
 You can reach out to me via:
 
-✉️ Email: utkarsh.2023ug1077@iiitranchi.ac.in
+- ✉️ **Email**: [utkarshrastogi121@gmail.com](mailto:utkarshrastogi121@gmail.com)  
+- 💼 **LinkedIn**: [linkedin.com/in/utkarshrastogi121](https://www.linkedin.com/in/utkarshrastogi121)  
+- 🧑‍💻 **GitHub**: [github.com/utkarshrastogi121](https://github.com/utkarshrastogi121)  
 
-💼 LinkedIn: linkedin.com/in/utkarshrastogi121
-
-🧑‍💻 GitHub: github.com/utkarshrastogi121
