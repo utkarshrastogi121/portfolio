@@ -11,7 +11,7 @@ import CardProject from "../components/CardProject";
 import TechStackIcon from "../components/TechStackIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Code, Boxes } from "lucide-react";
+import { Code, Boxes, Briefcase } from "lucide-react";
 
 // ToggleButton
 const ToggleButton = ({ onClick, isShowingMore }) => (
@@ -138,7 +138,8 @@ const localProjects = [
     id: 1,
     Img: "/Buzzline.png",
     Title: "BuzzLine",
-    Description: "A social media app for sharing posts and connecting with friends.",
+    Description:
+      "A social media app for sharing posts and connecting with friends.",
     Link: "https://buzz-line.vercel.app/",
     GithubLink: "https://github.com/utkarshrastogi121/buzzline",
   },
@@ -146,7 +147,8 @@ const localProjects = [
     id: 2,
     Img: "/AIinterview.png",
     Title: "AI Interview App",
-    Description: "Practice mock interviews with AI-driven questions and feedback.",
+    Description:
+      "Practice mock interviews with AI-driven questions and feedback.",
     Link: "https://ai-interview-app-sepia.vercel.app/",
     GithubLink: "https://github.com/utkarshrastogi121/AiInterviewApp",
   },
@@ -154,9 +156,38 @@ const localProjects = [
     id: 3,
     Img: "/DoctorAppointment.png",
     Title: "Medicare",
-    Description: "A platform to schedule, manage, and track doctor appointments effortlessly.",
+    Description:
+      "A platform to schedule, manage, and track doctor appointments effortlessly.",
     Link: "https://doctorappointment2-1fef.onrender.com/",
     GithubLink: "https://github.com/utkarshrastogi121/DoctorAppointmentApp",
+  },
+];
+
+// ✅ Experience Data
+const experiences = [
+  {
+    id: 1,
+    role: "SDE Intern",
+    company: "Mixins Technology",
+    duration: "July 2025 - Present",
+    description: [
+      "Developed web apps with React, TypeScript, Node.js, and PostgreSQL.",
+      "Designed and implemented REST APIs for core business modules.",
+      "Implemented JWT authentication for secure user sessions.",
+      "Integrated OpenAI APIs to assist users with personalized support.",
+    ],
+  },
+  {
+    id: 2,
+    role: "Open Source Contributor",
+    company: "GirlScript Summer of Code (GSSoC)",
+    duration: "August 2025 - Present",
+    description: [
+      "Contributed to open-source projects by fixing bugs and adding features.",
+      "Improved project documentation and onboarding guides.",
+      "Collaborated with maintainers and developers across the community.",
+      "Gained hands-on experience with Git, GitHub, and CI/CD workflows.",
+    ],
   },
 ];
 
@@ -189,12 +220,17 @@ export default function FullWidthTabs() {
       id="Portfolio"
     >
       {/* Header */}
-      <div className="text-center pb-10" data-aos="fade-up" data-aos-duration="1000">
+      <div
+        className="text-center pb-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h2 className="inline-block text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
           <span
             style={{
               color: "#6366f1",
-              backgroundImage: "linear-gradient(45deg, #6366f1 10%, #a855f7 93%)",
+              backgroundImage:
+                "linear-gradient(45deg, #6366f1 10%, #a855f7 93%)",
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               WebkitTextFillColor: "transparent",
@@ -204,8 +240,9 @@ export default function FullWidthTabs() {
           </span>
         </h2>
         <p className="text-slate-400 max-w-2xl mx-auto text-sm md:text-base mt-2">
-          Explore my journey through projects, certifications, and technical expertise.
-          Each section represents a milestone in my continuous learning path.
+          Explore my journey through projects, certifications, and technical
+          expertise. Each section represents a milestone in my continuous
+          learning path.
         </p>
       </div>
 
@@ -271,78 +308,120 @@ export default function FullWidthTabs() {
               },
             }}
           >
-            <Tab icon={<Code className="mb-2 w-5 h-5" />} label="Projects" {...a11yProps(0)} />
-            <Tab icon={<Boxes className="mb-2 w-5 h-5" />} label="Tech Stack" {...a11yProps(2)} />
+            <Tab
+              icon={<Code className="mb-2 w-5 h-5" />}
+              label="Projects"
+              {...a11yProps(0)}
+            />
+            <Tab
+              icon={<Boxes className="mb-2 w-5 h-5" />}
+              label="Tech Stack"
+              {...a11yProps(1)}
+            />
+            <Tab
+              icon={<Briefcase className="mb-2 w-5 h-5" />}
+              label="Experience"
+              {...a11yProps(2)}
+            />
           </Tabs>
         </AppBar>
 
-        {/* Swipeable Tabs */}
-          
-          {/* Projects Tab */}
-          <TabPanel value={value} index={0} dir={theme.direction}>
-            <div className="container mx-auto flex justify-center items-center overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
-                {displayedProjects.map((project, index) => (
-                  <div
-                    key={project.id || index}
-                    data-aos={
-                      index % 3 === 0 ? "fade-up-right" : index % 3 === 1 ? "fade-up" : "fade-up-left"
-                    }
-                    data-aos-duration={
-                      index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"
-                    }
-                  >
-                    <CardProject
-                      Img={project.Img}
-                      Title={project.Title}
-                      Description={project.Description}
-                      Link={project.Link}
-                      GithubLink={project.GithubLink}
-                      id={project.id}
-                    />
-                  </div>
-                ))}
-              </div>
+        {/* Projects Tab */}
+        <TabPanel value={value} index={0} dir={theme.direction}>
+          <div className="container mx-auto flex justify-center items-center overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-3 gap-5">
+              {displayedProjects.map((project, index) => (
+                <div
+                  key={project.id || index}
+                  data-aos={
+                    index % 3 === 0
+                      ? "fade-up-right"
+                      : index % 3 === 1
+                      ? "fade-up"
+                      : "fade-up-left"
+                  }
+                  data-aos-duration={
+                    index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"
+                  }
+                >
+                  <CardProject
+                    Img={project.Img}
+                    Title={project.Title}
+                    Description={project.Description}
+                    Link={project.Link}
+                    GithubLink={project.GithubLink}
+                    id={project.id}
+                  />
+                </div>
+              ))}
             </div>
-            {localProjects.length > initialItems && (
-              <div className="mt-6 w-full flex justify-start">
-                <ToggleButton
-                  onClick={() => toggleShowMore("projects")}
-                  isShowingMore={showAllProjects}
-                />
-              </div>
-            )}
-          </TabPanel>
+          </div>
+          {localProjects.length > initialItems && (
+            <div className="mt-6 w-full flex justify-start">
+              <ToggleButton
+                onClick={() => toggleShowMore("projects")}
+                isShowingMore={showAllProjects}
+              />
+            </div>
+          )}
+        </TabPanel>
 
-          {/* Tech Stack Tab */}
-          <TabPanel value={value} index={1} dir={theme.direction}>
-            <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-10 gap-4">
-                {techStacks.map((stack, index) => (
-                  <div
-                    key={index}
-                    data-aos={
-                      index % 3 === 0
-                        ? "fade-up-right"
-                        : index % 3 === 1
-                        ? "fade-up"
-                        : "fade-up-left"
-                    }
-                    data-aos-duration={
-                      index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"
-                    }
-                    className="flex justify-center"
-                  >
-                    <TechStackIcon
-                      TechStackIcon={stack.icon}
-                      Language={stack.language}
-                      size="w-12 h-12" // smaller icons
-                    />
-                  </div>
-                ))}
-              </div>
+        {/* Tech Stack Tab */}
+        <TabPanel value={value} index={1} dir={theme.direction}>
+          <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-10 gap-4">
+              {techStacks.map((stack, index) => (
+                <div
+                  key={index}
+                  data-aos={
+                    index % 3 === 0
+                      ? "fade-up-right"
+                      : index % 3 === 1
+                      ? "fade-up"
+                      : "fade-up-left"
+                  }
+                  data-aos-duration={
+                    index % 3 === 0 ? "1000" : index % 3 === 1 ? "1200" : "1000"
+                  }
+                  className="flex justify-center"
+                >
+                  <TechStackIcon
+                    TechStackIcon={stack.icon}
+                    Language={stack.language}
+                    size="w-12 h-12"
+                  />
+                </div>
+              ))}
             </div>
-          </TabPanel>
+          </div>
+        </TabPanel>
+
+        {/* Experience Tab */}
+        <TabPanel value={value} index={2} dir={theme.direction}>
+          <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {experiences.map((exp, index) => (
+                <div
+                  key={exp.id}
+                  data-aos={index % 2 === 0 ? "fade-up-right" : "fade-up-left"}
+                  data-aos-duration={index % 2 === 0 ? "1000" : "1200"}
+                  className="bg-white/5 hover:bg-white/10 transition-all duration-300 rounded-xl border border-white/10 p-6 backdrop-blur-sm"
+                >
+                  <h3 className="text-lg font-semibold text-white">
+                    {exp.role}
+                  </h3>
+                  <p className="text-purple-400 font-medium">{exp.company}</p>
+                  <p className="text-slate-400 text-sm">{exp.duration}</p>
+                  <ul className="mt-2 list-disc list-inside text-slate-300 text-sm space-y-1">
+                    {exp.description.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </TabPanel>
       </Box>
     </div>
   );
