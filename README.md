@@ -6,14 +6,6 @@ I'm excited to share my **personal portfolio website** that showcases my skills,
 
 ---
 
-## 🧰 Prerequisites
-
-Before running the project, make sure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (LTS version recommended)
-
----
-
 ## 📦 Getting Started
 
 Follow these steps to run the project locally:
@@ -42,7 +34,7 @@ I'm always open to collaborating on exciting projects or just having a conversat
 
 You can reach out to me via:
 
-- ✉️ **Email**: [utkarshrastogi121@gmail.com](mailto:utkarshrastogi121@gmail.com)  
+- ✉️ **Email**: [utkarsh.2023ug1077@iiitranchi.ac.in](mailto:utkarsh.2023ug1077@iiitranchi.ac.in)  
 - 💼 **LinkedIn**: [linkedin.com/in/utkarshrastogi121](https://www.linkedin.com/in/utkarshrastogi121)  
 - 🧑‍💻 **GitHub**: [github.com/utkarshrastogi121](https://github.com/utkarshrastogi121)  
 
