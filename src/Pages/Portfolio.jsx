@@ -154,7 +154,7 @@ const localProjects = [
   },
   {
     id: 3,
-    Img: "/DoctorAppointment.png",
+    Img: "/Medicare.png",
     Title: "Medicare",
     Description:
       "A platform to schedule, manage, and track doctor appointments effortlessly.",
