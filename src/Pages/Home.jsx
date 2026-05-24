@@ -94,7 +94,7 @@ const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
 const WORDS = ["Code. Deploy. Repeat."];
-const TECH_STACK = ["Node.js", "Express.js", "MongoDB", "React"];
+const TECH_STACK = ["Node.js", "Express.js", "React","Spring Boot", "Java", "C++"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/utkarshrastogi121" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/utkarshrastogi121" },
@@ -179,7 +179,7 @@ const Home = () => {
 
             {/* Right Column – Lottie */}
             <div
-              className="w-full lg:w-1/2 h-[600px] relative flex items-center justify-center"
+              className="w-full lg:w-[40%] h-[400px] relative flex items-center justify-center mr-16"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
               data-aos="fade-left"
