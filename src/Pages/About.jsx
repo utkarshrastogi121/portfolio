@@ -237,12 +237,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              I&apos;m a passionate full-stack developer with a strong
-              foundation in modern web technologies. I thrive on solving complex
-              problems, continuously learning new skills, and collaborating with
-              others to deliver impactful results. My expertise spans frontend
-              and backend development, and I enjoy transforming creative ideas
-              into seamless user experiences.
+              Full-Stack Developer with a passion for building impactful and scalable applications. Experienced in modern web technologies including React, Next.js, Node.js, Spring Boot, and TypeScript, with a strong foundation in problem-solving and software development. Focused on creating seamless user experiences, writing clean and efficient code, and continuously learning to stay ahead in technology.
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
